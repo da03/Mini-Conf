@@ -4,11 +4,11 @@
 <head>
     {% block head %}
     <!-- Required meta tags -->
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    >
 
     <!-- External Javascript libs_ext  -->
     <script src="https://cdn.jsdelivr.net/npm/d3@5/dist/d3.min.js"></script>
@@ -66,20 +66,19 @@
     <link
             href="static/css/Lato.css"
             rel="stylesheet"
-    />
-    <link href="static/css/Exo.css" rel="stylesheet"/>
+    >
+    <link href="static/css/Exo.css" rel="stylesheet">
     <link
             href="static/css/Cuprum.css"
             rel="stylesheet"
-    />
-    <link rel="stylesheet" href="static/css/main.css"/>
-<!--    <link rel="stylesheet" href="static/css/fa_regular.css"/>-->
-    <link rel="stylesheet" href="static/css/fa_solid.css"/>
-    <link rel="stylesheet" href="static/css/lazy_load.css"/>
-    <link rel="stylesheet" href="static/css/typeahead.css"/>
+    >
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/fa_solid.css">
+    <link rel="stylesheet" href="static/css/lazy_load.css">
+    <link rel="stylesheet" href="static/css/typeahead.css">
+    <link rel="stylesheet" href="static/css/conversation.css">
 
-    <title>{{config.page_title.prefix}}{% if page_title
-        %}{{config.page_title.separator}}{{page_title}}{% endif %}</title>
+    <title>{{config.page_title.prefix}}</title>
     {% endblock %}
 </head>
 
@@ -87,15 +86,10 @@
 <!-- NAV -->
 {% block header %}
 {% set navigation_bar = [
-('index.html', 'Home'),
-('calendar.html', 'Schedule'),
-('papers.html', 'Papers'),
-('workshops.html', 'Workshops'),
-('chat.html', 'Chat'),
-('help.html', 'Help'),
+('papers.html', 'Home'),
 ] -%}
 
-<nav
+<!--nav
         class="navbar sticky-top navbar-expand-lg navbar-light bg-light mr-auto"
         id="main-nav"
 >
@@ -134,7 +128,7 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav-->
 {% endblock %}
 
 {% block body %}
@@ -143,7 +137,7 @@
 
 <div class="container">
     <!-- Tabs -->
-    <div class="tabs">
+    <div class="tabs" style="display: none;">
         {% block tabs %} {% endblock %}
     </div>
     <!-- Content -->
